@@ -1,7 +1,7 @@
-# car_tracker_vid
+# Python AI Car & Pedestrian Tracker (Video Version)
 Python AI Car and Pedestrian Tracker using OpenCV Casscade Classification
 
-##Prerequisites
+## Prerequisites
 OpenCV:
 ```
 pip install opencv-python
