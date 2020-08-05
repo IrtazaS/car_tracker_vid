@@ -1,10 +1,10 @@
 import cv2
 
-# load video with cars
+# load video with cars or pedestrians
 #video = cv2.VideoCapture('videos/motorbike_dashcam.mp4')
 video = cv2.VideoCapture('videos/tesla_dashcam.mp4')
 
-# load pre-trained car classifier
+# load pre-trained car & pedestrian classifier
 car_classifier_file = 'classifiers/car_classifier.xml'
 pedestrian_classifier_file = 'classifiers/haarcascade_fullbody.xml'
 
@@ -12,6 +12,7 @@ pedestrian_classifier_file = 'classifiers/haarcascade_fullbody.xml'
 car_tracker = cv2.CascadeClassifier(car_classifier_file)
 pedestrian_tracker = cv2.CascadeClassifier(pedestrian_classifier_file)
 
+print("script running")
 while True:
 
     #Read the current frame
